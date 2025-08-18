@@ -55,7 +55,7 @@
 	"disable",
 	"enable"
     ],
-    "multiplex_url": "https://reveal-multiplex.glitch.me",
+    "multiplex_url": "",
     "navigation_mode": [
 	"default",
 	"linear",
