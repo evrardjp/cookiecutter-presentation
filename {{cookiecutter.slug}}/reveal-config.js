@@ -22,8 +22,21 @@ Reveal.initialize({
 {% endif  %}
 {% if cookiecutter.reveal_js_menu_version != 'disable' %}
     menu: {
-        themes: {{ cookiecutter.menu_enable_theme_switch | default(true) | lower }},
+{% if cookiecutter.menu_enable_theme_switch | default(true) %}
+        themes: [
+	    {
+		name: 'Black',
+		theme: 'reveal.js/dist/theme/black.css'
+	    },
+	    {
+		name: 'White',
+		theme: 'reveal.js/dist/theme/white.css'
+	    }
+	],
         themesPath: 'reveal.js/dist/theme',
+{% else %}
+        themes: false,
+{% endif  %}
         transitions: false,
         openButton: false,
         openSlideNumber: true,
