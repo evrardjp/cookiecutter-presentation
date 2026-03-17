@@ -68,9 +68,7 @@
 	"enable"
     ],
     "reveal_js_version": [
-	"5.2.1",
-	"5.1.0",
-	"5.0.5",
+	"6.0.0",
 	"master",
 	"dev"
     ],
