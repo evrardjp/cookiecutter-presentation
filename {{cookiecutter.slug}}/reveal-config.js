@@ -44,6 +44,10 @@ Reveal.initialize({
     },
 
 {% endif %}
+    markdown: {
+	smartypants: true,
+    },
+
 {% if cookiecutter.multiplex == 'enable' %}
     multiplex: {
         secret: multiplex_config['secret'],
